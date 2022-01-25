@@ -56,7 +56,6 @@
         <iframe id="react-dom" src="./dependency-react-dom.html" frameborder="0"></iframe>
         <script>
             const domReactDOM = document.querySelector('#react-dom')
-            debugger
             domReactDOM.contentWindow.onload = () => {
                 window.parent.run(React, domReactDOM.contentWindow.ReactDOM)
             }
